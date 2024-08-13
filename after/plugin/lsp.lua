@@ -3,7 +3,7 @@ local lsp_zero = require('lsp-zero')
 -- lsp_attach is where you enable features that only work
 -- if there is a language server active in the file
 local lsp_attach = function(client, bufnr)
-  local opts = {buffer = bufnr}
+  local opts = { buffer = bufnr }
 
   vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
   vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
@@ -13,8 +13,7 @@ local lsp_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
   vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
   vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-  vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
-  vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+  vim.keymap.set({ 'n', 'x' }, 'f', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
   vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 end
 
@@ -27,26 +26,26 @@ lsp_zero.extend_lspconfig({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	-- Replace the language servers listed here 
-	-- with the ones you want to install
-	ensure_installed = {'lua_ls', 'html', 'eslint', 'tsserver', 'solargraph', 'pyright'},
-	handlers = {
-	function(server_name)
-		if server_name == 'lua_ls' then
-				require('lspconfig').lua_ls.setup({
-					settings = {
-						Lua = {
-							diagnostics = {
-								globals = {'vim'},  -- Tell lua_ls that 'vim' is a global
-							},
-						}
-					}
-				})
-			else
-				require('lspconfig')[server_name].setup({})
-			end
-		end,
-	},
+  -- Replace the language servers listed here
+  -- with the ones you want to install
+  ensure_installed = { 'lua_ls', 'html', 'eslint', 'tsserver', 'solargraph', 'pyright' },
+  handlers = {
+    function(server_name)
+      if server_name == 'lua_ls' then
+        require('lspconfig').lua_ls.setup({
+          settings = {
+            Lua = {
+              diagnostics = {
+                globals = { 'vim' }, -- Tell lua_ls that 'vim' is a global
+              },
+            }
+          }
+        })
+      else
+        require('lspconfig')[server_name].setup({})
+      end
+    end,
+  },
 })
 
 ---
@@ -57,11 +56,11 @@ local cmp_action = lsp_zero.cmp_action()
 
 cmp.setup({
   sources = {
-    {name = 'nvim_lsp'},
+    { name = 'nvim_lsp' },
   },
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
-    ['<CR>'] = cmp.mapping.confirm({select = false}),
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
 
     -- Ctrl+Space to trigger completion menu
     ['<C-Space>'] = cmp.mapping.complete(),
