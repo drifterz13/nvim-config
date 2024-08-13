@@ -1,7 +1,47 @@
 # Related setup
 
-## 1. Starship config
+1. Starship config
 - https://gist.github.com/drifterz13/988f6c8124d6f3eae09a24bd320d6883
 
-## 2. Kitty terminal config
+2. Kitty terminal config
 - https://github.com/drifterz13/kitty-conf
+
+
+## Essentials commands
+
+- **File and Directory Management:**
+    
+    - `%` → Create file
+    - `d` → Create directory
+    - `D` → Delete directory
+- **File Navigation:**
+    
+    - `:Ex` → Open file explorer
+    - `gg` → Go to top of the file
+    - `G` → Go to bottom of the file
+    - `$` → Go to the end of the line
+    - `^` → Go to the beginning of the line
+- **Editing and Formatting:**
+    
+    - `:so` → Source the file
+    - `visual mode + =` → Format Lua file
+    - `u` → Undo
+    - `d, d` in normal mode → Delete
+    - `:%s/oldstring/newstring` → Replace string
+- **Window Management:**
+    
+    - `<C-w (hjkl)>` → Jump to window
+    - `<C-o>` → Jump back to previous location
+- **Movement:**
+    
+    - `w` → Jump forward
+    - `b` → Jump backward
+- **Package Management:**
+    
+    - `:PackerSync` → Install packages
+
+### **Kitty Terminal**
+
+- **Tab and Window Management:**
+    - `cmd + shift + ]` → Switch tab
+    - `cmd + 1`, `cmd + 2` → Switch window
