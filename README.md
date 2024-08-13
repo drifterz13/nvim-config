@@ -45,3 +45,4 @@
 - **Tab and Window Management:**
     - `cmd + shift + ]` → Switch tab
     - `cmd + 1`, `cmd + 2` → Switch window
+    - `cmd + r` -> Resize window
