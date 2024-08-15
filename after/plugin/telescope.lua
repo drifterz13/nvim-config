@@ -2,7 +2,7 @@ local builtin = require('telescope.builtin')
 
 require('telescope').setup({
   defaults = {
-    file_ignore_patterns = { 'node_modules', '.git', 'dist', '.config/nvim/pack' },
+    file_ignore_patterns = { 'node_modules', '.git', 'dist', '.config/nvim/pack', 'coverage' },
   },
 })
 
