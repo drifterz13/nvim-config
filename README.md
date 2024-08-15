@@ -22,7 +22,8 @@
     - `$` → Go to the end of the line
     - `^` → Go to the beginning of the line
     - `%` -> Jump to corresponding tag (eg. ),})
-    - `]}` -> Jump to corresponding curly braceley
+    - `]}` -> Jump to corresponding curly brace
+    - `a}` -> Jump to next curly brace on visual mode
 - **Editing and Formatting:**
     
     - `:so` → Source the file
