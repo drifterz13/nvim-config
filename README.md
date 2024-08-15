@@ -21,6 +21,8 @@
     - `G` → Go to bottom of the file
     - `$` → Go to the end of the line
     - `^` → Go to the beginning of the line
+    - `%` -> Jump to corresponding tag (eg. ),})
+    - `]}` -> Jump to corresponding curly braceley
 - **Editing and Formatting:**
     
     - `:so` → Source the file
