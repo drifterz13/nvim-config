@@ -21,9 +21,9 @@
     - `G` → Go to bottom of the file
     - `$` → Go to the end of the line
     - `^` → Go to the beginning of the line
-    - `%` -> Jump to corresponding tag (eg. ),})
-    - `]}` -> Jump to corresponding curly brace
-    - `a}` -> Jump to next curly brace on visual mode
+    - `%` -> Go to corresponding tag (eg. ),})
+    - `]}` -> Go to corresponding curly brace
+    - `a}` -> Go to next curly brace on visual mode
 - **Editing and Formatting:**
     
     - `:so` → Source the file
@@ -31,6 +31,9 @@
     - `u` → Undo
     - `d, d` in normal mode → Delete
     - `:%s/oldstring/newstring` → Replace string
+    - `x` → Cut
+    - `r` → Replace
+    - `R` → Replace word
 - **Window Management:**
     
     - `<C-w (hjkl)>` → Jump to window
@@ -49,3 +52,6 @@
     - `cmd + shift + ]` → Switch tab
     - `cmd + 1`, `cmd + 2` → Switch window
     - `cmd + r` -> Resize window
+    - `cmd + w` -> Open new windonw
+    - `cmd + t` -> Open new tab
+    - `cmd + shift + d` -> Delete current tab/window
