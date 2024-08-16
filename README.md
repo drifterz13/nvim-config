@@ -55,3 +55,8 @@
     - `cmd + w` -> Open new windonw
     - `cmd + t` -> Open new tab
     - `cmd + shift + d` -> Delete current tab/window
+
+### **Nvim Terminal**
+- **Tab and Window Management:**
+    - `<leader>1`, `<leader>2` → Switch neotree tab
+    - `:bd` -> Buffer delete
