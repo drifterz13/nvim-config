@@ -48,6 +48,7 @@ require("mason-lspconfig").setup({
 ---
 -- Autocompletion config
 ---
+
 local cmp = require("cmp")
 
 cmp.setup({
