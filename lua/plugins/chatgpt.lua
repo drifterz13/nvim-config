@@ -6,8 +6,8 @@ return {
       require("chatgpt").setup({
         openai_params = {
           model = "gpt-4o-mini",
-          frequency_penalty = 0,
-          presence_penalty = 0,
+          frequency_penalty = 0.3,
+          presence_penalty = 0.3,
           max_tokens = 4095,
           temperature = 0.2,
           top_p = 0.1,
