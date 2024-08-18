@@ -3,7 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     opts = {
-      ensure_installed = { 'html', 'javascript', 'typescript', 'tsx', 'ruby', 'python', 'c', 'lua' },
+      ensure_installed = { 'markdown', 'markdown_inline', 'html', 'javascript', 'typescript', 'tsx', 'lua' },
       sync_install = false,
       -- Automatically install missing parsers when entering buffer
       -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally

@@ -4,7 +4,6 @@ return {
     event = "VeryLazy",
     config = function()
       require("chatgpt").setup({
-        api_key_cmd = "gpg --decrypt " .. vim.fn.stdpath("config") .. "/chatgpt-api-key.gpg",
         openai_params = {
           model = "gpt-4o-mini",
           frequency_penalty = 0,
