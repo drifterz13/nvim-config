@@ -1,10 +1,9 @@
-require("drifterz13.lazy")
-require("drifterz13.colors")
+require("config")
 
 vim.api.nvim_set_option("clipboard", "unnamed")
 
 -- Register a command to switch to terminal background.
-local colors = require('drifterz13.colors')
+local colors = require('config.colors')
 vim.api.nvim_create_user_command('ColorMyPencils', function(opts)
   colors.ColorMyPencils(opts.args ~= "")
 end, {})
