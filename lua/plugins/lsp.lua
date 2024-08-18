@@ -9,6 +9,9 @@ return {
       vim.g.lsp_zero_extend_cmp = 0
       vim.g.lsp_zero_extend_lspconfig = 0
     end,
+    keys = {
+      { "<leader>f", "<cmd>LspZeroFormat<cr>", desc = "Format the current buffer" },
+    }
   },
   {
     'williamboman/mason.nvim',

@@ -7,6 +7,9 @@ return {
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
+    keys = {
+      { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "Toggle Neotree side bar" },
+    }
   },
 
 }
