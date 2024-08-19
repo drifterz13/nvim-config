@@ -5,3 +5,4 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 vim.opt.conceallevel = 1
+vim.g.vim_markdown_frontmatter = 1

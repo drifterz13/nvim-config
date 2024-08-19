@@ -7,7 +7,6 @@ return {
     "nvim-lua/plenary.nvim",
   },
   keys = {
-    { "<leader>sn", "<cmd>ObsidianSearch<cr>", desc = "Search Obsidian notes" },
     {
       "<leader>nn",
       function()
@@ -51,5 +50,16 @@ return {
       end
       return tostring(os.time()) .. "-" .. suffix
     end,
+
+    attachments = {
+      img_folder = "assets/imgs", -- This is the default
+
+      -- Optional, customize the default name or prefix when pasting images via `:ObsidianPasteImg`.
+      ---@return string
+      img_name_func = function()
+        -- Prefix image names with timestamp.
+        return string.format("%s-", os.time())
+      end,
+    }
   },
 }
