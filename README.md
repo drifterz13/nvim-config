@@ -27,6 +27,7 @@
 - **Editing and Formatting:**
     
     - `:so` → Source the file
+    - `=` -> Indent the file
     - `visual mode + =` → Format Lua file
     - `u` → Undo
     - `d, d` in normal mode → Delete
@@ -34,6 +35,9 @@
     - `x` → Cut
     - `r` → Replace
     - `R` → Replace word
+    - `q` + `any char` -> Record macro then using `@` + `any char` -> Play macro
+    - `c` + `i` inner + `{, (, ", i` -> Change inner text/block object
+    - `c` + `a` around + `{, (, ", i` -> Change around text/block object
 - **Window Management:**
     
     - `<C-w (hjkl)>` → Jump to window
