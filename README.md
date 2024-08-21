@@ -38,6 +38,8 @@
     - `q` + `any char` -> Record macro then using `@` + `any char` -> Play macro
     - `c` + `i` inner + `{, (, ", i` -> Change inner text/block object
     - `c` + `a` around + `{, (, ", i` -> Change around text/block object
+    - `d` + `i` inner + `{, (, ", i` -> Delete inner text/block object
+    - `d` + `a` around + `{, (, ", i` -> Delete around text/block object
 - **Window Management:**
     
     - `<C-w (hjkl)>` → Jump to window
