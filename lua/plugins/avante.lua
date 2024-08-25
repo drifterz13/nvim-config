@@ -4,10 +4,19 @@ return {
     event = "VeryLazy",
     build = "make",
     opts = {
-      provider = "openai",
-      openai = {
-        endpoint = "https://api.openai.com/v1",
-        model = "gpt-4o-2024-08-06",
+      -- provider = "openai",
+      -- openai = {
+      --   endpoint = "https://api.openai.com/v1",
+      --   model = "gpt-4o-2024-08-06",
+      --   timeout = 30000, -- Timeout in milliseconds
+      --   temperature = 0,
+      --   max_tokens = 4096,
+      --   ["local"] = false,
+      -- },
+      provider = "claude",
+      claude = {
+        endpoint = "https://api.anthropic.com",
+        model = "claude-3-5-sonnet-20240620",
         timeout = 30000, -- Timeout in milliseconds
         temperature = 0,
         max_tokens = 4096,
