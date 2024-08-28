@@ -63,6 +63,11 @@ return {
         vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", opts)
         vim.keymap.set("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
         vim.keymap.set("n", "<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
+        -- Show all diagnostics on current line in floating window
+        vim.keymap.set(
+          'n', '<leader>d', ':lua vim.diagnostic.open_float()<CR>',
+          { noremap = true, silent = true }
+        )
       end
 
       lsp_zero.extend_lspconfig({
