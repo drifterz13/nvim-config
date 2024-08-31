@@ -22,6 +22,11 @@ return {
         max_tokens = 4096,
         ["local"] = false,
       },
+      keys = {
+        { "<leader>aa", function() require("avante.api").ask() end,     desc = "avante: ask",    mode = { "n", "v" } },
+        { "<leader>ar", function() require("avante.api").refresh() end, desc = "avante: refresh" },
+        { "<leader>ae", function() require("avante.api").edit() end,    desc = "avante: edit",   mode = "v" },
+      },
     },
     dependencies = {
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
