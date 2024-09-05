@@ -10,7 +10,7 @@ return {
     },
     event = "VeryLazy",
     keys = {
-      { "<leader>nt", "<cmd>Neotree toggle<CR>", desc = "Toggle Neotree", silent = true },
+      { "<leader>nt", "<cmd>Neotree <CR>", desc = "Open Neotree", silent = true },
     },
     opts = {
       filesystem = {
@@ -24,7 +24,9 @@ return {
             ".DS_Store",
           },
         },
-        follow_current_file = true,    -- Automatically find and focus the current file
+        follow_current_file = {
+          enable = true,
+        },    -- Automatically find and focus the current file
         use_libuv_file_watcher = true, -- Use more efficient file watching
       },
       window = {
