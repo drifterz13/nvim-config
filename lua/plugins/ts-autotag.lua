@@ -1,6 +1,7 @@
 return {
   {
     "windwp/nvim-ts-autotag",
+<<<<<<< HEAD
     opts = {
       per_filetype = {
         ["tsx"] = {
@@ -11,5 +12,9 @@ return {
       }
     },
     event = { "BufRead", "BufNewFile" },
+=======
+    event = { "BufRead", "BufNewFile" },
+    opts = {}
+>>>>>>> origin/main
   },
 }
