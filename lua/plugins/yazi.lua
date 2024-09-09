@@ -31,6 +31,7 @@ return {
       keymaps = {
         show_help = '<f1>',
       },
+      include_hidden = { ".github" }, -- Add this line to include .github directory
     },
   }
 }
