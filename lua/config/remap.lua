@@ -3,7 +3,8 @@ vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true })
 vim.keymap.set("n", "{", "{zz", { noremap = true })
 vim.keymap.set("n", "}", "}zz", { noremap = true })
-vim.keymap.set("n", "<C-x>", ":bd<CR>", { noremap = true })
+vim.keymap.set("n", "<C-x>", ":bp<bar>sp<bar>bn<bar>bd<CR>", { noremap = true })
+-- vim.keymap.set("n", "<C-x>", ":bd<CR>", { noremap = true })
 -- views can only be fully collapsed with the global statusline
 vim.opt.laststatus = 3
 -- Default splitting will cause your main splits to jump when opening an edgebar.

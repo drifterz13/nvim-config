@@ -13,6 +13,8 @@ return {
       vim.keymap.set("n", "<leader>3", "<cmd>BufferLineGoToBuffer 3<CR>")
       vim.keymap.set("n", "<leader>4", "<cmd>BufferLineGoToBuffer 4<CR>")
       vim.keymap.set("n", "<leader>5", "<cmd>BufferLineGoToBuffer 5<CR>")
+      vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>")
+      vim.keymap.set("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>")
     end,
   },
 
